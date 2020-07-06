@@ -43,7 +43,7 @@ public class BoardInfo {
         return board;
     }
 
-    private static void add(String str) {
+    public static void add(String str) {
         int localId = id.incrementAndGet();
         Board board = new Board();
         String[] splitInfo = str.split("!");

@@ -60,4 +60,13 @@ public class Board {
     public void setTime(String time) {
         this.time = time;
     }
+
+    public void updateAllInfo(String str) {
+        String[] splitStr = str.split("!");
+        this.setFlight(splitStr[0]);
+        this.setDestination(splitStr[1]);
+        this.setGate(splitStr[2]);
+        this.setTime(splitStr[3]);
+        this.setStatus(splitStr[4]);
+    }
 }
